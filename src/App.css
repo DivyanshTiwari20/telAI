@@ -109,24 +109,3 @@
   background: transparent; /* Chrome/Safari/Opera */
 }
 
-/* 
-
-.chat-messages::-webkit-scrollbar {
-  width: 8px;  /* Change width of scrollbar */
-}
-
-.chat-messages::-webkit-scrollbar-track {
-  background: #f1f1f1;  /* Color of the track */
-}
-
-.chat-messages::-webkit-scrollbar-thumb {
-  background-color: #888;  /* Color of the scrollbar thumb */
-  border-radius: 10px;  /* Roundness of the scrollbar thumb */
-  border: 3px solid #f1f1f1;  /* Space around the thumb */
-}
-
-.chat-messages::-webkit-scrollbar-thumb:hover {
-  background: #555;  /* Color of the thumb when hovered */
-} 
-
-*/
