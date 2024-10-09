@@ -121,13 +121,17 @@ const Chat = () => {
 
   return (
     <div className="chat-container">
-      <div className="chat-messages">
+      <div className="chat-messages ">
         {messages.map((message, index) => (
           <div
             key={index}
             className={`message ${
-              message.role === "user" ? "user-message" : "bot-message"
+              message.role === "user" ? "user-message " : "bot-message"
             }`}
+            style={{
+              alignSelf: message.role === "user" ? 'flex-end' : 'flex-start', // Ensures user messages align to the right
+              maxWidth: message.role === "user" ? '60%' : '80%' }}// Ensures bot messages take up 80% of space
+             // Set maxWidth based on user 
           >
             <ReactMarkdown>{message.content}</ReactMarkdown>
           </div>
